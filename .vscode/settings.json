@@ -15,9 +15,9 @@
         "Command Prompt": {
             "path": "${env:windir}\\System32\\cmd.exe",
             "env": { 
-                "GOROOT": "${env:USERPROFILE}\\Downloads\\go1.21.0.windows-amd64\\go",
-                "GOPATH": "${env:USERPROFILE}\\Downloads\\gopath",
-                "PATH": "D:\\Softwares\\PortableGit\\bin;${env:USERPROFILE}\\Downloads\\go1.21.0.windows-amd64\\go\\bin"
+                "GOROOT": "${env:USERPROFILE}\\Downloads\\go1.21.0.windows-amd64\\go;D:\\Softwares\\go1.21.0.windows-amd64\\go",
+                "GOPATH": "${env:USERPROFILE}\\Downloads\\gopath;D:\\Softwares\\gopath",
+                "PATH": "${env:USERPROFILE}\\Downloads\\PortableGit\\bin;D:\\Softwares\\PortableGit\\bin;${env:USERPROFILE}\\Downloads\\go1.21.0.windows-amd64\\go\\bin;D:\\Softwares\\go1.21.0.windows-amd64\\go\\bin"
             }
         }
     },
