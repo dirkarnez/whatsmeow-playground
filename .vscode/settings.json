@@ -1,6 +1,18 @@
 {
     "terminal.integrated.profiles.windows": {
-        "PowerShell": null,
+        "PowerShell -NoProfile": {
+            "source": "PowerShell",
+            "args": ["-NoProfile"],
+            "env": { 
+                "GOROOT_C": "${env:USERPROFILE}\\Downloads\\go1.21.0.windows-amd64\\go",
+                "GOROOT_D": "D:\\Softwares\\go1.21.0.windows-amd64\\go",
+                "GOROOT": "${env:GOROOT_D}",
+                "GOPATH_C": "${env:USERPROFILE}\\Downloads\\gopath",
+                "GOPATH_D": "D:\\Softwares\\gopath",
+                "GOPATH": "${env:GOPATH_D}",
+                "PATH": "${env:USERPROFILE}\\Downloads\\PortableGit\\bin;D:\\Softwares\\PortableGit\\bin;${env:USERPROFILE}\\Downloads\\go1.21.0.windows-amd64\\go\\bin;D:\\Softwares\\go1.21.0.windows-amd64\\go\\bin"
+            }
+        },
         "Windows PowerShell": null,
         // "Custom Init": {
         //     "path": "pwsh.exe",
@@ -15,11 +27,15 @@
         "Command Prompt": {
             "path": "${env:windir}\\System32\\cmd.exe",
             "env": { 
-                "GOROOT": "${env:USERPROFILE}\\Downloads\\go1.21.0.windows-amd64\\go",
-                "GOPATH": "${env:USERPROFILE}\\Downloads\\gopath",
-                "PATH": "D:\\Softwares\\PortableGit\\bin;${env:USERPROFILE}\\Downloads\\go1.21.0.windows-amd64\\go\\bin"
+                "GOROOT_C": "${env:USERPROFILE}\\Downloads\\go1.21.0.windows-amd64\\go",
+                "GOROOT_D": "D:\\Softwares\\go1.21.0.windows-amd64\\go",
+                "GOROOT": "D:\\Softwares\\go1.21.0.windows-amd64\\go",
+                "GOPATH_C": "${env:USERPROFILE}\\Downloads\\gopath",
+                "GOPATH_D": "D:\\Softwares\\gopath",
+                "GOPATH": "D:\\Softwares\\gopath",
+                "PATH": "${env:USERPROFILE}\\Downloads\\PortableGit\\bin;D:\\Softwares\\PortableGit\\bin;${env:USERPROFILE}\\Downloads\\go1.21.0.windows-amd64\\go\\bin;D:\\Softwares\\go1.21.0.windows-amd64\\go\\bin"
             }
         }
     },
-    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+    "terminal.integrated.defaultProfile.windows": "PowerShell -NoProfile"
 }
