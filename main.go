@@ -11,6 +11,7 @@ import (
 	"go.mau.fi/whatsmeow/store/sqlstore"
 	"go.mau.fi/whatsmeow/types/events"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/mdp/qrterminal"
 	waLog "go.mau.fi/whatsmeow/util/log"
 )
 
